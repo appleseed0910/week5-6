@@ -11,8 +11,15 @@ This repository contains:
 -  Futher Research expectations
 
 In last two weeks, I kepet reading and learn from the book *Writing Interactive Fiction With Twine*. 
-<br>But based on last comment that I received, I'd take care of presenting the research process more clearly.
-<br>(I've also learned a bit about using GithubPages and Github formatting marks this week. Efficient tool and knowledge!)
+
+But based on last comment that I received, I'd take care of presenting the research process more clearly.
+
+(I've also learned a bit about using GithubPages and Github formatting marks this week. Efficient tool and knowledge!)
+
+## Research
+
+### 1. Vitrual map and Puzzel Design 
+I bind these two topics together not only because in the book the two chapters are connected, but also after I read them thoroughly, I think these two elements are highly relevant to each other.
 
 
 
