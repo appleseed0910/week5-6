@@ -34,8 +34,40 @@ Not like some games with graphics, the puzzle that we could make in Twine more l
 
 These genre names could help us with brainstorming, but what more important I think is to make the puzzle **matters** with the story. Make the puzzle engage with the story or push story forward, meld with the story.
 
-In this week's demo, I create a small sample which is a 
+Some technique reviews for this part:
 
+- Macro and Hook
+
+As we all know in Twine, links could be eaisly create by square brackets such as
+```
+[[Link Text|Passage Name]] //not prefer
+```
+or
+```
+[[Link Text -> Passge Name]] [[Passage Name <- Link Text]] //recommend 
+```
+There is also the other useful link macro in Twine. It allow us to create a link inside the same passage, which means
+```
+(link-replace:"Link Text")[New text]  //Replace the link text with the new text
+(link-reveal:"Link Text")[New text]   //Bind the link text with the new text
+```
+by using these macro, once the link is clicked, the new text would appear right behind the link. This is called **_anonymous hooks_**.
+
+The other type of hook is **_named hooks_** which usually looks like
+```
+[Link text]<tagName|
+(click: ?tagName)[New Text]
+```
+Here we actually use another click macro. "<tagName|" is the hook name. [Newtext] is the hook, (clcik: ?tagName) is the macro.
+
+By using **_named hooks_**, we could put Link and the new text anywhere we want separately. Such as a letter, leaflet, or a note. The item itself need to appear in a setting decription, but the detailed content could go below all the body text.
+
+- Display macro
+
+```
+(display:"passageName")
+```
+This marco is quite staightforward for both understanding and learning. In my view, display marco is very suitable for some status or inventory passages. Some special game states which "stand" out from the formal game process.
 
 ## Reference
 https://www.gamasutra.com/view/news/293930/7_works_of_interactive_fiction_that_every_developer_should_study.php
