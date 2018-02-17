@@ -62,12 +62,45 @@ Here we actually use another click macro. "<tagName|" is the hook name. [Newtext
 
 By using **_named hooks_**, we could put Link and the new text anywhere we want separately. Such as a letter, leaflet, or a note. The item itself need to appear in a setting decription, but the detailed content could go below all the body text.
 
+(there's another kind of hook, **_Hidden hooks_**, which could be called by **_(show:$keyName)_**) I think it could be used powerfully in some certain occasions such as reading secret message or invisiable ink, some tricks like that, but not as popular/common as former two main kinds of hooks. So I didn't write it here. [Link to the reference page](https://twine2.neocities.org/#markup_hidden-hook).
+
 - Display macro
 
 ```
 (display:"passageName")
 ```
 This marco is quite staightforward for both understanding and learning. In my view, display marco is very suitable for some status or inventory passages. Some special game states which "stand" out from the formal game process.
+
+### 2. Items or Variables, Inventory or Array
+
+Although I've already picked these two topics in the last checkpoint, for further goal of building a demo contains **collection puzzle** and some more intermediate mechanics, I'm sorting some notes here for clarity. (Since my last checkpoint doesn't help so much.)
+
+- Set variables
+```
+(set: $variableName to variableValue) // var a = num/boolean.
+```
+- Check operator
+```
++, -, *, /, <=, >=, is, is not
+```
+- Conditional statement
+```
+(if: $variableName is "check opponent")[hook text](else:)
+```
+Here if we want to use something like "if variable is 5, set the variable to 7." It could be written in
+```
+(if: $a is 5)[(set: $a to $a+2)]
+```
+Becasue a marco should be using with a hook, so make sure putting the following marco inside a hook.
+- Print marco
+```
+(pring: $variableName)
+```
+- History marco
+```
+(history:)
+```
+this marco shows all the passage names that the player has ever been.
 
 ## Reference
 https://www.gamasutra.com/view/news/293930/7_works_of_interactive_fiction_that_every_developer_should_study.php
