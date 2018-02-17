@@ -31,3 +31,5 @@ Turing Trial](https://rtgrl.itch.io/turing-trial) and [Egress](https://thealeks.
 In the book *chapter 3 Creating a Vivid setting*, the author picked the maze as an ultimate chanllenge, which means the setting itself would be a puzzle for the players. This smoothly switched the topic to the next *chapter 4 Designing Puzzles*. There is more deep and practical tips and knowledge need to pay attention here.
 
 Not like some games with graphics, the puzzle that we could make in Twine more likely to be text. (We could insert imgs when we need, but hardly to make some interactions but a just plain picture, which declines fun of graphic puzzle I think.) In 
+
+https://www.gamasutra.com/view/news/293930/7_works_of_interactive_fiction_that_every_developer_should_study.php
