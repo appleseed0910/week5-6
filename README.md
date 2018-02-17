@@ -102,6 +102,26 @@ Becasue a marco should be using with a hook, so make sure putting the following 
 ```
 this marco shows all the passage names that the player has ever been.
 
+In the book, the author used the array macro to render an inventory, it does make sense.
+- Some related marcos
+```
+Common structure:
+(set: $bag to (array:))                      //create an empty array
+(set: $bag to $bag + (array:"sleepyPotion")) //add an item to the array
+(set: $bag to $bag - (array:"sleepyPotion")) //remove an item from the array
+(if: $bag's length is 0)                     //check array length
+(if: $bag contains "sleepyPotion")           //check belongings
+
+For simplier structure:
+(set: $haveSleepypotion to true)             //after or before somewhere that the player just picked up the item
+(if: $haveSleepypotion is true)              //check belongings
+```
+- Count marco
+Huge thank to the author (and to the creator of Twine of course!) As she mentioned in the book, there's the other useful marco inTwine called Count, whihc could help us with sorting the inventory when the item list gets really long or big.
+```
+(count: $bag, "sleepyPotion")         //return the amount of sleepyPotion in the bag
+```
+
 ## Reference
 https://www.gamasutra.com/view/news/293930/7_works_of_interactive_fiction_that_every_developer_should_study.php
 
