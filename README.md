@@ -69,7 +69,7 @@ By using **_named hooks_**, we could put Link and the new text anywhere we want 
 ```
 (display:"passageName")
 ```
-This marco is quite staightforward for both understanding and learning. In my view, display marco is very suitable for some status or inventory passages. Some special game states which "stand" out from the formal game process.
+This macro is quite staightforward for both understanding and learning. In my view, display macro is very suitable for some status or inventory passages. Some special game states which "stand" out from the formal game process.
 
 ### 2. Items or Variables, Inventory or Array
 
@@ -91,19 +91,19 @@ Here if we want to use something like "if variable is 5, set the variable to 7."
 ```
 (if: $a is 5)[(set: $a to $a+2)]
 ```
-Becasue a marco should be using with a hook, so make sure putting the following marco inside a hook.
-- Print marco
+Becasue a macro should be using with a hook, so make sure putting the following macro inside a hook.
+- Print macro
 ```
 (pring: $variableName)
 ```
-- History marco
+- History macro
 ```
 (history:)
 ```
-this marco shows all the passage names that the player has ever been.
+this macro shows all the passage names that the player has ever been.
 
 In the book, the author used the array macro to render an inventory, it does make sense.
-- Some related marcos
+- Some related macros
 ```
 Common structure:
 (set: $bag to (array:))                      //create an empty array
@@ -116,13 +116,44 @@ For simplier structure:
 (set: $haveSleepypotion to true)             //after or before somewhere that the player just picked up the item
 (if: $haveSleepypotion is true)              //check belongings
 ```
-- Count marco
-Huge thank to the author (and to the creator of Twine of course!) As she mentioned in the book, there's the other useful marco inTwine called Count, whihc could help us with sorting the inventory when the item list gets really long or big.
+- Count macro
+Huge thank to the author (and to the creator of Twine of course!) As she mentioned in the book, there's the other useful macro inTwine called Count, whihc could help us with sorting the inventory when the item list gets really long or big.
 ```
 (count: $bag, "sleepyPotion")         //return the amount of sleepyPotion in the bag
 ```
 
+### 3. Character Stat
+Before we start building up real combat in Twine, there's one more important thing need to do.
+
+No matter it's on game design level or story design level, building up a detailed character stat is necessary. 
+
+Here we're going to use Datamap macro.
+```
+(set: $character1 to (datamap:))                              //declare a stat datamap for the character1
+(set: $character1 to it + (datamap:"Class", "Sleepyworm"))    //add property to the character datamap
+// here we use the shortcut 'it' to represent $character1
+
+(move: $character1's "Class" into $trashCan)                  //remove a certain property from the datamap
+```
+Besides, we still missed the most important one! Customized unique character name. To create a customized name, we use prompt and put macro.
+```
+(put: (prompt: "What's your name?", "") into $character1's "Name")
+```
+Changine variable's name is unwise to do but we could store the "Name" as a new property inside the datamap. When we need, we could simply use print macro to call it.
+```
+(set: $character1 to (datamap: "Name",""))                    //set a new character
+(put: (prompt: "Name what?","") into $character1's "Name")    //ask name from the player
+(print: $character1's "Name")                                 //print out the name when we need
+```
+Okay! With these LEGO pieces, we could bulid up a some what cool small demo.
+
+## Research Demo
+For this checkpoint, I created a small demo of a mystery with some techniques that I mentioned above.
+
+In this demo, the player would have the chance to customize their characte's name and status.
+<br>An inventory with some collectable items which would help them with solving simple puzzles.
+<br>The final goal of this small demo is to examine the house and try to escape.
+
 ## Reference
 https://www.gamasutra.com/view/news/293930/7_works_of_interactive_fiction_that_every_developer_should_study.php
-
 https://twine2.neocities.org/
