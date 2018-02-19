@@ -7,7 +7,7 @@ This repository contains:
 
 -  Inquiry
 -  Research notes
--  Research Demo
+-  Research Demo (PARTLY, online review [here](https://appleseed0910.github.io/week5-6/week5-6demo))
 -  Futher Research expectations
 
 In last two weeks, I kepet reading and learn from the book *Writing Interactive Fiction With Twine*. 
@@ -150,10 +150,15 @@ Okay! With these LEGO pieces, we could bulid up a some what cool small demo.
 ## Research Demo
 For this checkpoint, I created a small demo of a mystery with some techniques that I mentioned above.
 
-In this demo, the player would have the chance to customize their characte's name and status.
+Blueprint for this demo, the player would have the chance to customize their character's name and status.
 <br>An inventory with some collectable items which would help them with solving simple puzzles.
-<br>The final goal of this small demo is to examine the house and try to escape.
+<br>The final goal of this demo is to examine the house and try to escape.
+<br>Also some combats would be added.
+
+For this checkpoint, I finished the first little part.
+Please check it out [here](https://appleseed0910.github.io/week5-6/week5-6demo)
 
 ## Reference
 https://www.gamasutra.com/view/news/293930/7_works_of_interactive_fiction_that_every_developer_should_study.php
 https://twine2.neocities.org/
+http://glitch.camp/how_to_publish_a_website_using_github_pages/index.html
