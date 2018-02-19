@@ -160,5 +160,5 @@ Please check it out [here](https://appleseed0910.github.io/week5-6/week5-6demo)
 
 ## Reference
 https://www.gamasutra.com/view/news/293930/7_works_of_interactive_fiction_that_every_developer_should_study.php
-https://twine2.neocities.org/
-http://glitch.camp/how_to_publish_a_website_using_github_pages/index.html
+<br>https://twine2.neocities.org/
+<br>http://glitch.camp/how_to_publish_a_website_using_github_pages/index.html
