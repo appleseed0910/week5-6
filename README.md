@@ -7,7 +7,7 @@ This repository contains:
 
 -  Inquiry
 -  Research notes
--  Research Demo (PARTLY, online preview at [here](https://appleseed0910.github.io/week5-6/week5-6demo))
+-  Research Demo (PARTLY, online preview at <a href="https://appleseed0910.github.io/week5-6/week5-6demo" target="_blank">here</a>.
 -  Futher Research expectations
 
 In last two weeks, I kepet reading and learn from the book *Writing Interactive Fiction With Twine*. 
